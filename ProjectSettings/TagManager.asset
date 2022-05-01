@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ObjectMap
+  - Sign
+  - Body
+  - NPC
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - NPC
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 698629871
+    locked: 0
+  - name: Shadow
+    uniqueID: 2464134311
+    locked: 0
+  - name: Wall
+    uniqueID: 3293575703
+    locked: 0
+  - name: Objects
+    uniqueID: 1330684089
+    locked: 0
+  - name: Weapon
+    uniqueID: 3468966855
+    locked: 0
+  - name: Player
+    uniqueID: 3238422413
+    locked: 0
+  - name: Dialogue
+    uniqueID: 3062569247
+    locked: 0
