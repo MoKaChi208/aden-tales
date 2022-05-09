@@ -22,7 +22,6 @@ public class MeleeWeaponController : WeaponController
     }
     void Update()
     {
-        //Debug.Log("animation");
         //Debug.Log(playerMove.GetLastMoveDir());
         //anim.WeaponIdleAnimation(playerMove.GetLastMoveDir());
         //anim.Animate(playerMove.GetMoveDir(), playerMove.GetLastMoveDir());

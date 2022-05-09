@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0D021D2D-CA88-9BD7-7E02-810BDEAD9AB6}</ProjectGuid>
+    <ProjectGuid>{8D18D331-C1BB-A22C-0BD5-96C152A999F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,6 +57,7 @@
     <Compile Include="Assets\Enemy\Scripts\EnemyHandler.cs" />
     <Compile Include="Assets\WeaponManager\WeaponScripts\WeaponConfig.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Inventory\scripts\PlayerInventory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\WeaponManager\WeaponScripts\GunWeaponController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\Inventory\scripts\InventorySlot.cs" />
     <Compile Include="Assets\Enemy\Scripts\EnemyMain.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Enemy\Scripts\AgentScript.cs" />
@@ -97,6 +99,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Player\Scripts\Doctor\TurnOffNavmesh.cs" />
+    <Compile Include="Assets\Inventory\scripts\InventoryManager.cs" />
     <Compile Include="Assets\UI\Scripts\Camera\ObjectClicker.cs" />
     <Compile Include="Assets\Map\Scripts\FeatureMap\Sign.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
@@ -116,8 +119,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Player\Scripts\Doctor\Player.cs" />
-    <Compile Include="Assets\Inventory\scripts\InventorySlot.cs" />
-    <Compile Include="Assets\Inventory\scripts\InventoryManager.cs" />
+    <Compile Include="Assets\Inventory\scripts\HealthReaction.cs" />
+    <Compile Include="Assets\Inventory\scripts\MagicReaction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -815,19 +818,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SuperTiled2UnityEditor.csproj">
-      <Project>{A2B02C87-31F3-1C35-4F8B-8DFB33964533}</Project>
+      <Project>{C1EF6205-B14C-11B0-9476-F86538A03205}</Project>
       <Name>SuperTiled2UnityEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{5BD0E88A-7914-0A03-B654-5F96432E34A0}</Project>
+      <Project>{5C605954-FCEC-96DC-B2BA-34FEEC39DFF9}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{70C43A50-1741-430E-E261-B1BDBFF97AEE}</Project>
+      <Project>{D17FF7E0-5E94-31A4-ABA0-2A3A4A11C49D}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="SuperTiled2Unity.csproj">
-      <Project>{D267D766-3544-9ABE-E210-39403B747ED1}</Project>
+      <Project>{295920ED-6BF0-B37C-D3D3-774035E584D8}</Project>
       <Name>SuperTiled2Unity</Name>
     </ProjectReference>
   </ItemGroup>
