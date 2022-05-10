@@ -21,7 +21,6 @@ public class WeaponController : MonoBehaviour
     public DefaultConfig defaultConfig;
     public NameAllWeapon nameAllWeapon;
 
-
     protected float lastShot;
 
     public int gunIndex;

@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Red Health
   itemDescription: it Health
   itemImage: {fileID: 21300000, guid: 4ba85012aa76b0a4fa7c26128cc666f0, type: 3}
-  numberHeld: 0
+  numberHeld: 1
   usable: 1
   unique: 0
   thisEvent:

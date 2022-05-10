@@ -32,42 +32,42 @@ public class WeaponAnimation : MonoBehaviour
     //    anim.SetFloat("LastAttackX", dir.x);
     //    anim.SetFloat("LastAttackY", dir.y);
     //}
-    public void WeaponAttackAnimation(Vector3 dir, bool isAttack)
+    public void WeaponAttackAnimation(Vector3 dir)
     {
+        anim.SetBool("isAttack", true);
         float aX = 0, aY = 0;
-        //Debug.Log(Time.time);
-        if (isAttack)
-        {
-            
-            anim.SetBool("isAttack", true);
-            if (dir.x < 0) { aX = -1; }
-            if (dir.x > 0) { aX = 1; }
-            if (dir.x < 0) { aY = -1; }
-            if (dir.y > 0) { aY = 1; }
+        if (dir.x < 0) { aX = -1; }
+        if (dir.x > 0) { aX = 1; }
+        if (dir.x < 0) { aY = -1; }
+        if (dir.y > 0) { aY = 1; }
 
-            if (Math.Abs(dir.x) > Math.Abs(dir.y))
-            {
-                anim.SetFloat("attackX", aX);
-                anim.SetFloat("attackY", 0);
-            }
-            if (Math.Abs(dir.x) < Math.Abs(dir.y))
-            {
-                anim.SetFloat("attackX", 0);
-                anim.SetFloat("attackY", aY);
-            }
-            if (anim.GetCurrentAnimatorStateInfo(0).IsName("attack"))
-            {
-                Debug.Log("Done");
-                anim.SetBool("isAttack", false);
-            }
+        if (Math.Abs(dir.x) > Math.Abs(dir.y))
+        {
+            anim.SetFloat("attackX", aX);
+            anim.SetFloat("attackY", 0);
+        }
+        if (Math.Abs(dir.x) < Math.Abs(dir.y))
+        {
+            anim.SetFloat("attackX", 0);
+            anim.SetFloat("attackY", aY);
         }
 
+        StartCoroutine(dura());
 
+    }
+    public void SetAnimation(bool trigger)
+    {
+        anim.SetBool("isAttack", trigger);
+    }
+    IEnumerator dura()
+    {
+        yield return new WaitForSeconds(0.3f);
+        anim.SetBool("isAttack", false);
     }
 
     public void Animate(Vector3 moveDir, Vector3 lastMoveDir)
     {
-        
+
         sortSpriteLayer(moveDir, lastMoveDir);
         if (moveDir.x != 0)
         {
@@ -96,7 +96,7 @@ public class WeaponAnimation : MonoBehaviour
     }
     public void sortSpriteLayer(Vector3 moveDir, Vector3 lastMoveDir)
     {
-        
+
         if (moveDir == Vector3.up || lastMoveDir == Vector3.up)
         {
             spriteWeapon.sortingOrder = player.sortingOrder + 1;

@@ -14,10 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Large Potion
   itemDescription: It health
-  itemImage: {fileID: -28140290524993097, guid: 7e1bbd07e59c4e74fa6c3e7a67d2290d, type: 3}
-  numberHeld: 1
-  usable: 0
+  itemImage: {fileID: 21300000, guid: b44d56698620c3a45b7229a440c2f02a, type: 3}
+  numberHeld: 2
+  usable: 1
   unique: 1
   thisEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000}
+        m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
+        m_MethodName: DecreaseAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

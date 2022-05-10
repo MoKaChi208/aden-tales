@@ -8,6 +8,8 @@ public class PlayerShoot : MonoBehaviour
     public static PlayerShoot instance;
     private WeaponManager weaponManager;
     private PlayerMovementHandler player;
+    [SerializeField]
+    public WeaponAnimation weaponAnimation;
     public bool canShoot { get; private set; }
     private bool isHoldAttack;
     private bool isAttack;
@@ -15,6 +17,7 @@ public class PlayerShoot : MonoBehaviour
     private Vector3 attackDir;
     private Vector3 targetMouse;
 
+    float timeAttack = 7f;
     private State state;
     private enum State
     {
@@ -28,6 +31,7 @@ public class PlayerShoot : MonoBehaviour
         instance = this;
         player = GetComponent<PlayerMovementHandler>();
         weaponManager = GetComponent<WeaponManager>();
+        //weaponAnimation = GetComponent<WeaponAnimation>();
         canShoot = true;
         isAttack = false;
         SetStateNormal();
@@ -45,11 +49,11 @@ public class PlayerShoot : MonoBehaviour
             case State.Normal:
                 //HandleMovement();
                 HandleAttack();
-                HandleClick();
+                //HandleClick();
                 break;
             case State.Attacking:
                 HandleAttack();
-                HandleClick();
+                //HandleClick();
                 break;
         }
         //Attack by key
@@ -86,38 +90,43 @@ public class PlayerShoot : MonoBehaviour
         //}
         #endregion
 
-        //if (Input.GetMouseButton(0))
-        //{
-        //    isAttack = true;
-        //    SetStateAttacking();
-
-        //    attackDir = (UtilsClass.GetMouseWorldPosition() - GetPosition()).normalized;
-
-        //    weaponManager.Attack();
-        //}
-        //else
-        //{
-        //    isAttack = false;
-        //    attackDir = Vector3.zero;
-        //    weaponManager.ResetAttack();
-        //    SetStateNormal();
-        //    weaponManager.Attack();
-        //}
-        weaponManager.ResetAttack();
-        SetStateNormal();
-
-    }
-    private void HandleClick()
-    {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-            targetMouse = (UtilsClass.GetMouseWorldPosition()).normalized;
+            SetStateAttacking();
+            isAttack = true;
 
-            //Debug.Log(targetMouse);
+
+            attackDir = (UtilsClass.GetMouseWorldPosition() 
+                - GetPosition()).normalized;
+            Debug.Log("speedd"+ player.playerMain.PlayerRigidbody2D.velocity);
+            SetStateAttacking();
+            weaponAnimation.WeaponAttackAnimation(attackDir);
+            weaponManager.Attack();
+
+
         }
+        else
+        {
+            isAttack = false;
+            attackDir = Vector3.zero;
+            weaponManager.ResetAttack();
+            SetStateNormal();
+            weaponManager.Attack();
+        }
+
         weaponManager.ResetAttack();
-        SetStateNormal();
     }
+    //private void HandleClick()
+    //{
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        targetMouse = (UtilsClass.GetMouseWorldPosition()).normalized;
+
+    //        Debug.Log(targetMouse);
+    //    }
+    //    weaponManager.ResetAttack();
+    //    SetStateNormal();
+    //}
     private void SetStateNormal()
     {
         state = State.Normal;

@@ -68,6 +68,7 @@
     <Compile Include="Assets\UI\Scripts\Dialog\DialogueManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\UI\Scripts\Camera\CameraFollow.cs" />
+    <Compile Include="Assets\Inventory\scripts\OpenItem.cs" />
     <Compile Include="Assets\MonkeyCode\Monkey\UtilsClass.cs" />
     <Compile Include="Assets\NPC\scripts\NPCHandle.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -114,13 +115,14 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\Inventory\scripts\HealthReaction.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\Inventory\scripts\MagicReaction.cs" />
     <Compile Include="Assets\Player\Scripts\Doctor\PlayerShoot.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Player\Scripts\Doctor\Player.cs" />
-    <Compile Include="Assets\Inventory\scripts\HealthReaction.cs" />
-    <Compile Include="Assets\Inventory\scripts\MagicReaction.cs" />
+    <Compile Include="Assets\Inventory\scripts\PhysicalInventoryItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
