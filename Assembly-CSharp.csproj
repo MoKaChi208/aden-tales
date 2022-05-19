@@ -85,9 +85,11 @@
     <Compile Include="Assets\WeaponManager\WeaponScripts\WeaponController.cs" />
     <Compile Include="Assets\Enemy\Scripts\Enemy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\ScriptableObjects\scripts\FloatValue.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Player\Scripts\Doctor\DoctorController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\Enemy\Scripts\cruid\cruid.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\WeaponManager\WeaponScripts\WeaponManager.cs" />
@@ -99,7 +101,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\Player\Scripts\Doctor\PlayerHit.cs" />
     <Compile Include="Assets\Player\Scripts\Doctor\TurnOffNavmesh.cs" />
+    <Compile Include="Assets\Inventory\scripts\PhysicalInventoryItem.cs" />
     <Compile Include="Assets\Inventory\scripts\InventoryManager.cs" />
     <Compile Include="Assets\UI\Scripts\Camera\ObjectClicker.cs" />
     <Compile Include="Assets\Map\Scripts\FeatureMap\Sign.cs" />
@@ -118,11 +122,11 @@
     <Compile Include="Assets\Inventory\scripts\HealthReaction.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Inventory\scripts\MagicReaction.cs" />
+    <Compile Include="Assets\Enemy\Scripts\Knockback.cs" />
     <Compile Include="Assets\Player\Scripts\Doctor\PlayerShoot.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Player\Scripts\Doctor\Player.cs" />
-    <Compile Include="Assets\Inventory\scripts\PhysicalInventoryItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

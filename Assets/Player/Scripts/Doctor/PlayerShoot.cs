@@ -17,7 +17,6 @@ public class PlayerShoot : MonoBehaviour
     private Vector3 attackDir;
     private Vector3 targetMouse;
 
-    float timeAttack = 7f;
     private State state;
     private enum State
     {

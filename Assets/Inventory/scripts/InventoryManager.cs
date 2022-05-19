@@ -12,6 +12,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private GameObject useButton;
     public InventoryItem currentItem;
+    
 
     public void SetTextAndButton(string descriptions, bool buttonActive)
     {
